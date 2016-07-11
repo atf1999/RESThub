@@ -1,7 +1,9 @@
 package com.atf.rest.hub.services;
 
-import com.atf.rest.hub.models.Repositories;
+import com.atf.rest.hub.models.Repository;
 
+
+import java.util.List;
 
 import retrofit2.http.GET;
 import retrofit2.http.Path;
@@ -14,5 +16,5 @@ public interface GithubService {
     String SERVICE_ENDPOINT = "https://api.github.com";
 
     @GET("/users/{username}/repos")
-    Observable<Repositories> getRepos(@Path("username") String username);
+    Observable<List<Repository>> getRepos(@Path("username") String username);
 }

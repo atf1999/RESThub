@@ -3,7 +3,7 @@ package com.atf.rest.hub.models;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-public class Repositories{
+public class Repository {
 
     @SerializedName("id")
     @Expose
